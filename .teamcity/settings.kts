@@ -53,6 +53,8 @@ object Build : BuildType({
     templates(MavenBuild)
     name = "Build"
 
+    publishArtifacts = PublishMode.SUCCESSFUL
+
     steps {
         maven {
             name = "Package"
