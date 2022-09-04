@@ -53,7 +53,7 @@ object Build : BuildType({
     templates(MavenBuild)
     name = "Build"
 
-    publishArtifacts = PublishMode.SUCCESSFUL
+    publishArtifacts = PublishMode.ALWAYS
 
     steps {
         maven {
