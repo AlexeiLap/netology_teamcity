@@ -61,7 +61,7 @@ object Build : BuildType({
             id = "RUNNER_4"
 
             conditions {
-                contains("teamcity.build.branch", "master")
+                contains("teamcity.build.branch", "main")
             }
             goals = "clean package"
             runnerArgs = "-Dmaven.test.failure.ignore=true"
